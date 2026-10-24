@@ -45,7 +45,7 @@
   Do NOT put a service_role key in this file.
 */
 const SUPABASE_URL = "https://sxolbbilicnrcuxpgryu.supabase.co";
-const SUPABASE_ANON_KEY = "PASTE_SUPABASE_ANON_OR_PUBLISHABLE_KEY_HERE";
+const SUPABASE_ANON_KEY = "sb_publishable_12JmczPHou1rIe_d5Qhegg_td8BDZud";
 const supabaseReady = SUPABASE_URL.startsWith("https://") && !SUPABASE_URL.includes("PASTE_") && !SUPABASE_ANON_KEY.includes("PASTE_");
 const sb = supabaseReady ? window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY) : null;
 const BUCKET = "mixes";
