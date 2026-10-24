@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1020"><title>MixVault 254 — Mixes & Videos</title>
+<style>
+:root{--bg:#0b1020;--panel:#131b2e;--panel2:#1b2641;--text:#eef2ff;--muted:#9ba8c7;--line:#2b3855;--purple:#8b5cf6;--cyan:#22d3ee;--red:#fb7185}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#252153 0%,var(--bg) 46%);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}
+.wrap{max-width:1120px;margin:auto;padding:24px 18px 56px}.top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:26px}.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:16px;background:linear-gradient(135deg,var(--purple),var(--cyan));display:grid;place-items:center;font-size:25px;font-weight:900}.brand h1{margin:0;font-size:22px;letter-spacing:-.6px}.brand p{margin:2px 0 0;color:var(--muted);font-size:12px}.topactions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:0;border-radius:11px;padding:10px 14px;font-weight:750;font-size:13px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:7px}.btn:hover{filter:brightness(1.1)}.primary{background:linear-gradient(100deg,var(--purple),#656bf2);color:white}.secondary{background:#24314e;color:var(--text);border:1px solid #3b4a6a}.ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}.danger{background:#3b1d31;color:#fecdd3;border:1px solid #633047}
+.hero{padding:30px;border:1px solid #354365;border-radius:24px;background:linear-gradient(120deg,#1b2443ed,#111a2eed);box-shadow:0 18px 60px #0002}.eyebrow{color:#a5f3fc;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:800}.hero h2{font-size:clamp(31px,5vw,48px);line-height:1.06;letter-spacing:-1.4px;margin:10px 0 12px}.hero h2 span{background:linear-gradient(90deg,#c4b5fd,#67e8f9);color:transparent;background-clip:text}.hero p{max-width:660px;color:var(--muted);margin:0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 28px}.stat{background:#111a2c;border:1px solid var(--line);border-radius:15px;padding:14px}.stat strong{display:block;font-size:23px}.stat span{color:var(--muted);font-size:11px}.authpanel,.adminpanel{margin:18px 0;padding:18px;border:1px solid var(--line);background:#111a2c;border-radius:18px}.authpanel h3,.adminpanel h3{margin:0 0 5px}.muted{color:var(--muted);font-size:13px;margin:0 0 13px}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.fields input,.fields textarea{width:100%;min-width:0;background:#0b1020;border:1px solid var(--line);border-radius:10px;color:var(--text);padding:11px 12px;font:inherit}.fields .wide{grid-column:1/-1}.authbuttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.status{font-size:13px;color:#a5f3fc;margin-top:10px;min-height:20px}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:28px 0 14px}.sectionhead h3{margin:0;font-size:21px}.sectionhead p{margin:3px 0 0;color:var(--muted);font-size:13px}.tools{display:flex;gap:10px;margin-bottom:15px}.search{flex:1;min-width:100px;background:#111a2c;border:1px solid var(--line);border-radius:11px;color:var(--text);padding:12px;font:inherit}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:14px}.card{min-width:0;background:linear-gradient(145deg,#172139,#111827);border:1px solid var(--line);border-radius:18px;padding:15px;display:flex;flex-direction:column;gap:10px}.cover{height:110px;border-radius:12px;background:linear-gradient(135deg,#322b68,#155e75);display:grid;place-items:center;font-size:35px;position:relative}.cover.video{background:linear-gradient(135deg,#54284c,#7c2d12)}.type{position:absolute;right:8px;top:8px;background:#0b1020d9;border:1px solid #ffffff22;border-radius:7px;padding:3px 7px;font-size:10px}.filename{font-weight:750;overflow-wrap:anywhere}.meta{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:11px}.card audio,.card video{width:100%;max-height:180px;border-radius:8px}.cardactions{display:flex;gap:8px;margin-top:auto}.cardactions .btn{flex:1}.empty{padding:38px 20px;text-align:center;border:1px dashed #394766;border-radius:18px;color:var(--muted)}.empty strong{display:block;color:var(--text);font-size:17px}.footer{margin-top:28px;text-align:center;color:#657392;font-size:12px}.hidden{display:none!important}.smallnote{font-size:12px;color:var(--muted);margin-top:8px}
+@media(max-width:600px){.wrap{padding:16px 12px 40px}.top{align-items:flex-start}.topactions{justify-content:flex-end}.hero{padding:22px}.stats{gap:8px}.stat{padding:11px}.stat strong{font-size:20px}.fields{grid-template-columns:1fr}.fields .wide{grid-column:auto}.sectionhead{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+ <div class="brand"><div class="logo">♫</div><div><h1>MixVault 254</h1><p>Kenyan mixes. Your sound. Your vault.</p></div></div>
+ <div class="topactions"><button class="btn secondary" id="accountToggle">Sign in / Join</button><button class="btn ghost hidden" id="logoutBtn">Log out</button></div>
+</header>
+<section class="hero"><div class="eyebrow">Welcome to MixVault 254</div><h2>Discover your next<br><span>favourite mix.</span></h2><p>Browse MP3 mixes and MP4 videos, then sign in to preview or download. New mixes can be added by the site administrator.</p></section>
+<div class="stats"><div class="stat"><strong id="mixCount">—</strong><span>MIXES & VIDEOS</span></div><div class="stat"><strong id="audioCount">—</strong><span>AUDIO MIXES</span></div><div class="stat"><strong id="videoCount">—</strong><span>VIDEOS</span></div></div>
+
+<section class="authpanel" id="authPanel">
+ <h3>🔐 Join MixVault 254</h3><p class="muted">Create an account or sign in. An account is required to download files.</p>
+ <div class="fields"><input id="email" type="email" placeholder="Email address" autocomplete="email"><input id="password" type="password" placeholder="Password (at least 8 characters)" autocomplete="current-password"></div>
+ <div class="authbuttons"><button class="btn primary" id="signupBtn">Create account</button><button class="btn secondary" id="loginBtn">Sign in</button><button class="btn ghost" id="hideAuthBtn">Hide</button></div>
+ <div class="status" id="authStatus" aria-live="polite"></div>
+</section>
+
+<section class="adminpanel hidden" id="adminPanel">
+ <h3>＋ Add a mix or video</h3><p class="muted">Administrator upload area. Files are stored in your private online storage.</p>
+ <div class="fields"><input id="mediaTitle" placeholder="Mix title (e.g. Friday Night Mix)"><input id="mediaArtist" placeholder="DJ / artist (optional)"><input id="mediaFile" class="wide" type="file" accept=".mp3,.mp4,audio/mpeg,video/mp4,audio/*,video/*"></div>
+ <div class="authbuttons"><button class="btn primary" id="uploadBtn">Upload mix</button></div><div class="status" id="uploadStatus"></div>
+</section>
+
+<div class="sectionhead"><div><h3>Latest mixes</h3><p>Browse the library. Sign in to preview or download.</p></div></div>
+<div class="tools"><input id="search" class="search" placeholder="Search mixes, DJs, or file names…" aria-label="Search mixes"></div>
+<div class="grid" id="mixGrid"></div><div class="empty" id="empty"><strong>No mixes uploaded yet</strong>Check back soon for new sounds.</div>
+<div class="footer">© <span id="year"></span> MixVault 254 · Please share only media you have permission to distribute.</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+/*
+  SETUP: Paste your Supabase Project URL and anon/publishable key below.
+  Do NOT put a service_role key in this file.
+*/
+const SUPABASE_URL = "PASTE_SUPABASE_PROJECT_URL_HERE";
+const SUPABASE_ANON_KEY = "PASTE_SUPABASE_ANON_OR_PUBLISHABLE_KEY_HERE";
+const supabaseReady = SUPABASE_URL.startsWith("https://") && !SUPABASE_URL.includes("PASTE_") && !SUPABASE_ANON_KEY.includes("PASTE_");
+const sb = supabaseReady ? window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY) : null;
+const BUCKET = "mixes";
+let currentSession=null, isAdmin=false, mixes=[];
+const $=id=>document.getElementById(id);
+$('year').textContent=new Date().getFullYear();
+function status(id,msg){$(id).textContent=msg}
+function fmtSize(n){if(n<1024)return n+' B';if(n<1048576)return (n/1024).toFixed(1)+' KB';if(n<1073741824)return (n/1048576).toFixed(1)+' MB';return (n/1073741824).toFixed(2)+' GB'}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function setStatusUI(){
+ const logged=!!currentSession;
+ $('accountToggle').textContent=logged?(currentSession.user.email||'Account'):'Sign in / Join';
+ $('logoutBtn').classList.toggle('hidden',!logged);
+ $('authPanel').classList.toggle('hidden',logged);
+ $('adminPanel').classList.toggle('hidden',!isAdmin);
+}
+function isVideo(m){return m.media_type==='video'}
+async function refreshMixes(){
+ if(!sb){$('mixGrid').innerHTML='';$('empty').classList.remove('hidden');$('empty').innerHTML='<strong>Website setup needed</strong>The owner must connect Supabase using the setup guide before online accounts and mixes can work.';$('mixCount').textContent='0';$('audioCount').textContent='0';$('videoCount').textContent='0';return}
+ const {data,error}=await sb.from('mixes').select('id,title,artist,file_path,media_type,file_size,created_at').order('created_at',{ascending:false});
+ if(error){console.error(error);status('authStatus','Could not load mixes. Check the Supabase setup and database policies.');return}
+ mixes=data||[];renderMixes();
+}
+function renderMixes(){
+ const q=$('search').value.toLowerCase().trim();
+ const list=mixes.filter(m=>(m.title+' '+(m.artist||'')+' '+m.file_path).toLowerCase().includes(q));
+ $('mixCount').textContent=mixes.length;$('audioCount').textContent=mixes.filter(m=>!isVideo(m)).length;$('videoCount').textContent=mixes.filter(isVideo).length;
+ $('mixGrid').innerHTML='';$('empty').classList.toggle('hidden',list.length>0);
+ if(!list.length&&mixes.length){$('empty').innerHTML='<strong>No matching mixes</strong>Try a different search.'}else if(!mixes.length){$('empty').innerHTML='<strong>No mixes uploaded yet</strong>Check back soon for new sounds.'}
+ for(const m of list){
+  const card=document.createElement('article');card.className='card';
+  card.innerHTML=`<div class="cover ${isVideo(m)?'video':''}">${isVideo(m)?'▶':'♫'}<span class="type">${isVideo(m)?'MP4 / VIDEO':'MP3 / AUDIO'}</span></div><div class="filename">${esc(m.title)}</div><div class="meta"><span>${esc(m.artist||'MixVault 254')}</span><span>${fmtSize(Number(m.file_size||0))}</span></div><div class="smallnote">Sign in to create a secure preview link.</div><div class="cardactions"><button class="btn secondary" data-preview="${m.id}">▶ Preview</button><button class="btn primary" data-download="${m.id}">⇩ Download</button>${isAdmin?`<button class="btn danger" data-delete="${m.id}">Delete</button>`:''}</div>`;
+  $('mixGrid').appendChild(card);
+ }
+ document.querySelectorAll('[data-preview]').forEach(b=>b.onclick=()=>openMedia(b.dataset.preview,false));
+ document.querySelectorAll('[data-download]').forEach(b=>b.onclick=()=>openMedia(b.dataset.download,true));
+ document.querySelectorAll('[data-delete]').forEach(b=>b.onclick=()=>deleteMix(b.dataset.delete));
+}
+async function openMedia(id,download){
+ if(!currentSession){$('authPanel').classList.remove('hidden');status('authStatus','Please create an account or sign in before downloading or previewing.');$('authPanel').scrollIntoView({behavior:'smooth',block:'center'});return}
+ const m=mixes.find(x=>x.id===id);if(!m)return;
+ const {data,error}=await sb.storage.from(BUCKET).createSignedUrl(m.file_path,download?120:900,download?{download:m.title+(isVideo(m)?'.mp4':'.mp3')}:{});
+ if(error){alert('Could not open file. Check storage policies.');console.error(error);return}
+ if(download){const a=document.createElement('a');a.href=data.signedUrl;a.download='';document.body.appendChild(a);a.click();a.remove()}
+ else window.open(data.signedUrl,'_blank','noopener');
+}
+async function updateAuth(){
+ if(!sb)return;
+ const {data}=await sb.auth.getSession();currentSession=data.session;
+ isAdmin=false;
+ if(currentSession){const {data:profile}=await sb.from('profiles').select('role').eq('id',currentSession.user.id).maybeSingle();isAdmin=profile?.role==='admin'}
+ setStatusUI();await refreshMixes();
+}
+$('accountToggle').onclick=()=>{$('authPanel').classList.toggle('hidden');$('authPanel').scrollIntoView({behavior:'smooth',block:'center'})};
+$('hideAuthBtn').onclick=()=>$('authPanel').classList.add('hidden');
+$('signupBtn').onclick=async()=>{
+ if(!sb){status('authStatus','Setup needed: follow README.md to connect Supabase.');return}
+ const email=$('email').value.trim(),password=$('password').value;
+ if(!email||password.length<8){status('authStatus','Enter a valid email and a password with at least 8 characters.');return}
+ status('authStatus','Creating account…');
+ const {data,error}=await sb.auth.signUp({email,password});
+ status('authStatus',error?error.message:(data.session?'Account created. You are signed in.':'Account created. Check your email to confirm, then sign in.'));
+ if(data.session)await updateAuth();
+};
+$('loginBtn').onclick=async()=>{
+ if(!sb){status('authStatus','Setup needed: follow README.md to connect Supabase.');return}
+ status('authStatus','Signing in…');
+ const {error}=await sb.auth.signInWithPassword({email:$('email').value.trim(),password:$('password').value});
+ status('authStatus',error?error.message:'Signed in successfully.');
+ if(!error)await updateAuth();
+};
+$('logoutBtn').onclick=async()=>{if(sb)await sb.auth.signOut();currentSession=null;isAdmin=false;setStatusUI();status('authStatus','You have signed out.');};
+$('uploadBtn').onclick=async()=>{
+ if(!sb||!isAdmin){status('uploadStatus','Only a configured admin can upload files.');return}
+ const file=$('mediaFile').files[0],title=$('mediaTitle').value.trim(),artist=$('mediaArtist').value.trim();
+ if(!file||!title){status('uploadStatus','Add a title and choose an MP3 or MP4 file.');return}
+ if(file.size>250*1024*1024){status('uploadStatus','This starter app limits uploads to 250 MB.');return}
+ const video=file.type.startsWith('video/')||/\.mp4$/i.test(file.name),path=crypto.randomUUID()+'-'+file.name.replace(/[^a-zA-Z0-9._-]/g,'_');
+ status('uploadStatus','Uploading…');
+ const {error:upError}=await sb.storage.from(BUCKET).upload(path,file,{contentType:file.type|| (video?'video/mp4':'audio/mpeg'),upsert:false});
+ if(upError){status('uploadStatus',upError.message);return}
+ const {error:dbError}=await sb.from('mixes').insert({title,artist:artist||null,file_path:path,media_type:video?'video':'audio',file_size:file.size,uploaded_by:currentSession.user.id});
+ if(dbError){await sb.storage.from(BUCKET).remove([path]);status('uploadStatus','File upload succeeded but library record failed: '+dbError.message);return}
+ $('mediaTitle').value='';$('mediaArtist').value='';$('mediaFile').value='';status('uploadStatus','Upload complete.');await refreshMixes();
+};
+async function deleteMix(id){
+ if(!isAdmin||!confirm('Delete this mix?'))return;
+ const m=mixes.find(x=>x.id===id);if(!m)return;
+ const {error}=await sb.from('mixes').delete().eq('id',id);
+ if(error){alert(error.message);return}
+ await sb.storage.from(BUCKET).remove([m.file_path]);await refreshMixes();
+}
+$('search').addEventListener('input',renderMixes);
+if(sb){sb.auth.onAuthStateChange(()=>{setTimeout(updateAuth,0)});updateAuth()}else{setStatusUI();refreshMixes();status('authStatus','The site owner needs to finish the setup described in README.md.')}
+</script>
+</body></html>
