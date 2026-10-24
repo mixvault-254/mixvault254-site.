@@ -48,7 +48,7 @@ const SUPABASE_URL = "https://sxolbbilicnrcuxpgryu.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_12JmczPHou1rIe_d5Qhegg_td8BDZud";
 const supabaseReady = SUPABASE_URL.startsWith("https://") && !SUPABASE_URL.includes("PASTE_") && !SUPABASE_ANON_KEY.includes("PASTE_");
 const sb = supabaseReady ? window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY) : null;
-const storage.from = "mixes";
+const BUCKET = "mixes";
 let currentSession=null, isAdmin=false, mixes=[];
 const $=id=>document.getElementById(id);
 $('year').textContent=new Date().getFullYear();
